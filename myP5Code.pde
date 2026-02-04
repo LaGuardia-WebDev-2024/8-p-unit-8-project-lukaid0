@@ -10,13 +10,24 @@ setup = function() {
 //🟢draw Function - will run on repeat
 draw = function(){
 
-};
+
+  background(255,255,255,0)
+  drawShark(mouseX,mouseY);
+  drawFish(200,200);
+ 
+  }
+  
+  
+
+
 
 //🟢mouseClicked Function - will run when mouse is clicked
 mouseClicked = function(){
   
+  
  
 }
+
 
 //🟡drawFish Function - will run when called
 var drawFish = function(fishX, fishY, fishColor){
@@ -24,13 +35,13 @@ var drawFish = function(fishX, fishY, fishColor){
   fill(fishColor);
   text("𓆝", fishX, fishY);
 };
-
-
 //🟡drawShark Function - will run when called
-var drawShark = function(SharkX, SharkY, SharkColor){
+var drawShark = function(SharkX, SharkY){
   textSize(80);
-  fill(SharkColor);
+  
   text("🦈", SharkX, SharkY);
+
+  
 };
 
 
