@@ -14,6 +14,7 @@ draw = function(){
   background (255,25)
   drawShark(mouseX,mouseY);
   drawFih(200,200);
+  drawCat ()
 
  
   }
@@ -25,6 +26,7 @@ draw = function(){
 //🟢mouseClicked Function - will run when mouse is clicked
 mouseClicked = function(){
   drawFih(random(0,400),random(0,400))
+  drawCat(random(0,400),random(0,400))
 }
 
 
@@ -35,6 +37,14 @@ var drawFih = function(FihX, FihY){
   var FihY=random(0,400);
   text("🐟", FihX, FihY);
 };
+//drawCat Function 
+var drawCat = function(catX, catY){
+  textSize(80);
+  var catX=random(0,400);
+  var catY=random(0,400);
+  text("🐈",catX,catY);
+}
+
 //🟡drawShark Function - will run when called
 var drawShark = function(SharkX, SharkY){
   textSize(200);
@@ -43,5 +53,6 @@ var drawShark = function(SharkX, SharkY){
 
   
 };
+
 
 
